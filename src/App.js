@@ -1,10 +1,12 @@
 import React from 'react';
 import Row from "./components/Row";
 import requests from "./requests";
+import Banner from "./components/Banner";
 
 function App() {
   return (
-    <div>
+    <div className="bg-[#111]">
+        <Banner fetchURL={requests.fetchNetflixOriginals}/>
         <Row title="NETFLIX ORIGINALS" fetchURL={requests.fetchNetflixOriginals} isLargeRow/>
         <Row title="Trending Now" fetchURL={requests.fetchTrending}/>
         <Row title="Top Rated" fetchURL={requests.fetchTopRated}/>
