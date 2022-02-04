@@ -2,10 +2,12 @@ import React from 'react';
 import Row from "./components/Row";
 import requests from "./requests";
 import Banner from "./components/Banner";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="bg-[#111]">
+    <div className="bg-[#050505]">
+        <Navbar />
         <Banner fetchURL={requests.fetchNetflixOriginals}/>
         <Row title="NETFLIX ORIGINALS" fetchURL={requests.fetchNetflixOriginals} isLargeRow/>
         <Row title="Trending Now" fetchURL={requests.fetchTrending}/>
@@ -20,3 +22,8 @@ function App() {
 }
 
 export default App;
+
+/*
+missing the right film data for the banner, so maybe i'll have to change
+.name .overview ...
+ */

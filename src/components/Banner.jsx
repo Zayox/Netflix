@@ -46,6 +46,10 @@ const Banner = ({fetchURL}) => {
             <button className="bg-[#33333380] text-white pl-7 pr-7 pt-1 pb-1 rounded ml-[30px] font-semibold duration-200 hover:text-black hover:bg-white">My List</button>
             <h2 className="text-white font-semibold text-md ml-[30px] mt-6 w-[400px]">{truncate(movie[randomNumber]?.overview, 150)}</h2>
 
+            <div className="h-36" style={{
+                backgroundImage: "linear-gradient(180deg, transparent, #050505, #050505)"
+            }}/>
+
         </div>
     );
 }
