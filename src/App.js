@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="bg-[#050505]">
+    <div className="bg-[#050505] overflow-x-hidden">
         <Navbar />
         <Banner fetchURL={requests.fetchNetflixOriginals}/>
         <Row title="NETFLIX ORIGINALS" fetchURL={requests.fetchNetflixOriginals} isLargeRow/>
