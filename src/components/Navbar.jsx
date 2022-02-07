@@ -22,7 +22,7 @@ const Navbar = () => {
 
 
     return (
-      <div className="fixed h-16 flex justify-between w-[100vw] duration-300" style={{
+      <div className="fixed h-16 flex justify-between w-[100vw] duration-300 z-[1]" style={{
           backgroundColor: `${show ? "black" : "transparent"}`
       }}>
           <img src={netflixLogo} alt="netflix-logo" className="h-16 pl-4"/>
