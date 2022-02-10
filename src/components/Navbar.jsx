@@ -2,6 +2,7 @@ import React from 'react';
 import netflixLogo from '../img/netflixLogo.png';
 import netflixAvatar from '../img/netflixAvatar.png';
 import {useEffect, useState} from 'react';
+import {Link} from "react-router-dom";
 
 
 const Navbar = () => {
@@ -25,8 +26,8 @@ const Navbar = () => {
       <div className="fixed h-16 flex justify-between w-[100vw] duration-300 z-[1]" style={{
           backgroundColor: `${show ? "black" : "transparent"}`
       }}>
-          <img src={netflixLogo} alt="netflix-logo" className="h-16 pl-4"/>
-          <img src={netflixAvatar} alt="netflix-avatar" className="h-12 pr-8 pt-[14px] cursor-pointer"/>
+          <Link to="/"><img src={netflixLogo} alt="netflix-logo" className="h-16 pl-4"/></Link>
+          <Link to="/login"><img src={netflixAvatar} alt="netflix-avatar" className="h-12 pr-8 pt-[14px] cursor-pointer"/></Link>
       </div>
     );
 }

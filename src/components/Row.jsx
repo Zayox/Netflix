@@ -44,7 +44,7 @@ const Row = ({fetchURL,title, isLargeRow}) => {
       <div>
           <h2 className="font-bold text-2xl ml-4 text-white">{title}</h2>
           <div className="flex overflow-y-hidden overflow-x-scroll p-8" id="row_img">
-              {movie.map(movie => <img src={base_url+`${isLargeRow ? movie.poster_path : movie.backdrop_path}`} alt={movie.name} className={`${isLargeRow ? "ml-5 rounded-md duration-500 h-72 hover:scale-[1.1]" : "ml-5 rounded-md duration-500 h-36 hover:scale-[1.1]"}`} key={movie.id} onClick={()=>handleClick(movie)}/>)}
+              {movie.map(movie => <img src={base_url+`${isLargeRow ? movie.poster_path : movie.backdrop_path}`} alt={movie.name} className={`${isLargeRow ? "ml-5 rounded-md duration-500 h-72 hover:scale-[1.1] select-none" : "ml-5 rounded-md duration-500 h-36 hover:scale-[1.1] select-none"}`} key={movie.id} onClick={()=>handleClick(movie)}/>)}
           </div>
           {trailerURL && <YouTube videoId={trailerURL} opts={opts}/>}
       </div>
