@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Home from "./screens/Home";
+import Login from "./screens/Login";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
         <Router>
             <Switch>
                 <Route path="/login">
-                    <h1 className="bg-white">Welcome to the login <Link to="/">screen</Link></h1>
+                    <Login />
                 </Route>
                 <Route exact path="/">
                     <Home />
