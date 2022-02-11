@@ -44,7 +44,7 @@ const Banner = ({fetchURL}) => {
             <h1 className="text-white font-bold text-5xl pb-6 ml-[30px]">{movie[randomNumber]?.name}</h1>
             <button className="bg-[#33333380] text-white pl-7 pr-7 pt-1 pb-1 rounded ml-[30px] font-semibold duration-200 hover:text-black hover:bg-white">Play</button>
             <button className="bg-[#33333380] text-white pl-7 pr-7 pt-1 pb-1 rounded ml-[30px] font-semibold duration-200 hover:text-black hover:bg-white">My List</button>
-            <h2 className="text-white font-semibold text-md ml-[30px] mt-6 w-[400px]">{truncate(movie[randomNumber]?.overview, 150)}</h2>
+            <h2 className="text-white font-semibold text-md ml-[30px] mt-6 lg:w-[400px] md:w-[400px] w-[300px]">{truncate(movie[randomNumber]?.overview, 150)}</h2>
 
             <div className="h-36" style={{
                 backgroundImage: "linear-gradient(180deg, transparent, #050505, #050505)"
