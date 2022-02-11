@@ -23,8 +23,16 @@ const Banner = ({fetchURL}) => {
 
     function randomBackdrop(){
         let randomNumber = Math.floor(Math.random() * movie.length-1);
+        let randomNumber2 = Math.floor(Math.random() * movie.length-1);
 
-        return randomNumber;
+
+        if (randomNumber==-1){
+            return randomNumber2;
+        }
+        else {
+            return randomNumber;
+        }
+
     }
 
     function truncate(str, n){
